@@ -1,0 +1,11 @@
+body{
+    background-color: aqua;
+}
+
+.box{
+    font: arial;
+    color: white;
+    background-color: rgb(39, 39, 150);
+    width: 500px;
+    height: 500px;
+}
