@@ -1,17 +1,18 @@
-let alt = document.getElementById("altu")
+let alt = document.getElementById("altura")
 let pes = document.getElementById("peso")
-let res = document.getElementById("resu")
-let calc = document.getElementById("calcu")
+let res = document.getElementById("res")
+let calc = document.getElementById("calc")
+let limp = document.getElementById("limp")
 let classi = document.getElementById("class")
 
-calcu.addEventListener("click", function(){
+calc.addEventListener("click", function(){
     let altura = alt.value
     let peso = pes.value
     let calculo = 0
 
     calculo = peso / (altura * altura)
 
-    res.innerHTML = calculo.toFixed(1)
+    res.innerHTML = `${calculo.toFixed(1)} de IMC`
 
     if(altura == '' || isNaN(altura) || altura <= 0){
         window.confirm('INFORME UM VALOR VALIDO PARA ALTURA')
@@ -36,4 +37,11 @@ calcu.addEventListener("click", function(){
             classi.innerHTML = 'OB 3'
         }
     }
+})
+
+limp.addEventListener('click',() => {
+    let resul = res
+    let classif = classi
+    resul.innerHTML = 'Aguardando valores...'
+    classif.innerHTML = ''
 })

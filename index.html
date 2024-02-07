@@ -1,27 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <title>Calcula IMC</title>
+    
 </head>
 <body>
-    <div class="box">
-        <h1>Calculadora de IMC</h1>
-        <div class="form">
-            <input type="number" placeholder="Insira a sua altura em metros" id="altu">
-            <input type="number" placeholder="Insira o seu peso em kg" id="peso">
-            <button type="submit" id="calcu">Calcular</button>
+    <header>
+        <h1>Calculadora de Peso Ideal</h1>
+    </header>
+    <section>
+        <div>
+            <p>Peso: 
+                <input type="number" name="peso" id="peso" placeholder="Ex: 60kg">
+            </p>
+            <p>Altura: 
+                <input type="number" name="alt" id="altura" placeholder="Ex: 1.70">
+            </p>
+            <p>
+                <input type="button" value="Calcular" id="calc">
+                <input type="button" value="Limpar" id="limp">
+            </p>
         </div>
-        <div id="resu">
-            Aguardando
+        <div id="res">
+            Aguardando valores...
         </div>
         <div id="class">
-            Aguardando
+            
         </div>
-    </div>
-    <script src="app.js"></script>
+    </section>
+    <footer>
+        <h3>&copy;Pedro Lucas</h3>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

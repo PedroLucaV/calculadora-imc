@@ -1,11 +1,21 @@
 body{
-    background-color: aqua;
+    background-color: aquamarine;
+    font: normal 15pt Arial;
 }
-
-.box{
-    font: arial;
-    color: white;
-    background-color: rgb(39, 39, 150);
-    width: 500px;
-    height: 500px;
+header{
+    text-align: center;
+}
+section{
+    text-align: center;
+    margin: auto;
+    background-color: aliceblue;
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    height: auto;
+    padding: 10px;
+}
+footer{
+    text-align: center;
+    font-style: italic;
 }
